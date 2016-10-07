@@ -15,7 +15,8 @@ public class Pozolillo extends Pozole {
     }
 
     @Override
-    public void serve() {
+    public String serve() {
         System.out.println("Serving xtra hot in special pozolillo plate..." );
+        return "Serving xtra hot in special pozolillo plate...";
     }
 }

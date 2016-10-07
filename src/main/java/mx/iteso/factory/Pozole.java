@@ -8,8 +8,9 @@ public abstract class Pozole {
     public ArrayList toppings = new ArrayList();
 
 
-    public void serve() {
-        System.out.println("Serving in regular pozole plate..." );
+    public String serve() {
+        System.out.println("Serving in regular pozole plate...");
+        return "Serving in regular pozole plate...";
     }
 
     public void prepare() {

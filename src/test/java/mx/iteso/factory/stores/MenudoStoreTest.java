@@ -17,4 +17,5 @@ public class MenudoStoreTest {
     public void prepareTest() {
         Assert.assertEquals("Menudo", menudoStore.createPozole("").getName());
     }
+
 }

@@ -18,6 +18,10 @@ public class PozoleRojoStore extends PozoleStore {
             return new PozoleRojoPierna();
         else if (meat.equals("trompa"))
             return new PozoleRojoTrompa();
+        else if (meat.equals("puerco"))
+            return new PozoleRojoPuerco();
+        else if (meat.equals("conejo"))
+            return new PozoleRojoConejo();
         else return null;
     }
 }

@@ -33,6 +33,8 @@ public class AllPozoleStoreTest {
     public void prepareTestPozolillo() {
         Assert.assertEquals("Pozolillo", allPozoleStore.createPozole("pozolillo","cachete").getName());
     }
-
-
+    @Test
+    public void nullTest() {
+        Assert.assertNull(allPozoleStore.createPozole("",""));
+    }
 }

@@ -33,4 +33,16 @@ public class PozoleRojoStoreTest {
     public void prepareTestTrompa() {
         Assert.assertEquals("Pozole Rojo con Trompa", pozoleRojoStore.orderPozole("trompa").getName());
     }
+    @Test
+    public void prepareTestConejo() {
+        Assert.assertEquals("Pozole Rojo con Conejo", pozoleRojoStore.orderPozole("conejo").getName());
+    }
+    @Test
+    public void prepareTestPuerco() {
+        Assert.assertEquals("Pozole Rojo con Puerco", pozoleRojoStore.orderPozole("puerco").getName());
+    }
+    @Test (expected = NullPointerException.class)
+    public void nullTest() throws NullPointerException {
+        Assert.assertNull(pozoleRojoStore.orderPozole(""));
+    }
 }
